@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeroComponents />
+  <AboutUsComponent/>
+  <OurChefsComponent/>
+  <OurMenusComponent/>
+  <WelcomeComponent/>
+  <BookTableComponent/>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AboutUsComponent from "./components/AboutUsComponent.vue";
+import BookTableComponent from "./components/BookTableComponent.vue";
+import HeroComponents from "./components/HeroComponents";
+import OurChefsComponent from "./components/OurChefsComponent.vue";
+import OurMenusComponent from "./components/OurMenusComponent.vue";
+import WelcomeComponent from "./components/WelcomeComponent.vue";
+// import NavbarComponent from "./components/NavbarComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeroComponents,
+    AboutUsComponent,
+    OurChefsComponent,
+    OurMenusComponent,
+    WelcomeComponent,
+    BookTableComponent
+    // NavbarComponent
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+    font-family:;
+    src: url();
+} */
+
+.max_width{
+    max-width: 5rem;
+    width: 100%;
+}
